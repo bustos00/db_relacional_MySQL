@@ -6,17 +6,17 @@ use db_construindo_a_nossa_vida;
 create table tb_categoria (
 
 	id bigint not null auto_increment,
-	estrutura varchar (255) not null,
-	acabamento varchar (255),
-	cobertura varchar (255),
+	estrutura boolean,
+	acabamento boolean,
+	cobertura boolean,
 	primary key (id)
 	);
 
-	insert into tb_categoria (estrutura, acabamento, cobertura) values ("cimento", " pisos", " telhas"); 
-	insert into tb_categoria (estrutura, acabamento, cobertura) values ("areia", " janelas", " caibros"); 
-	insert into tb_categoria (estrutura, acabamento, cobertura) values ("brita", " azulejos", " calhas"); 
-	insert into tb_categoria (estrutura, acabamento, cobertura) values ("pregos", "portas", " caixa d’água"); 
-	insert into tb_categoria (estrutura, acabamento, cobertura) values ("escoras", "louças sanitárias", "madeiras");
+	insert into tb_categoria (estrutura, acabamento, cobertura) values ("true", " true", " true"); 
+	insert into tb_categoria (estrutura, acabamento, cobertura) values ("true", "true", "true"); 
+	insert into tb_categoria (estrutura, acabamento, cobertura) values ("true", "true", "true"); 
+	insert into tb_categoria (estrutura, acabamento, cobertura) values ("true", "true", "true"); 
+	insert into tb_categoria (estrutura, acabamento, cobertura) values ("true", "true", "true");
 	
 	create table tb_produto (
 	id bigint auto_increment, 
